@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Sprint Retro Notları
+    url: https://github.com/MM-Bordo/ai-data-quality-platform/discussions
+    about: Haftalık sprint retro notları için discussion açın
