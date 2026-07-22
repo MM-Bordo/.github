@@ -1,0 +1,19 @@
+# Genel bakış
+* @MM-Bordo/core-team
+
+# Backend
+/src/api/ @CoYildiz
+/src/core/ @CoYildiz
+/src/agents/ @emreyilmaz03
+
+# Frontend
+/frontend/ @adaroztuncer
+
+# DevOps
+/docker-compose.yml @adaroztuncer
+/.github/ @CoYildiz
+/Dockerfile @adaroztuncer
+
+# Test & Evaluation
+/tests/ @KeremReyhani
+/src/core/metrics.py @KeremReyhani
