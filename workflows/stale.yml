@@ -1,0 +1,22 @@
+name: Close Stale Issues and PRs
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Her gün gece yarısı
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          stale-issue-message: 'Bu issue 14 gündür aktif değil. Eğer devam ediyorsanız lütfen yorum yazın.'
+          stale-pr-message: 'Bu PR 14 gündür review bekliyor. Lütfen review alın veya kapatın.'
+          close-issue-message: 'Issue 21 gündür aktif değil, kapatılıyor. Gerekirse yeniden açın.'
+          close-pr-message: 'PR 21 gündür aktif değil, kapatılıyor.'
+          days-before-stale: 14
+          days-before-close: 21
+          stale-issue-label: 'status:stale'
+          stale-pr-label: 'status:stale'
+          exempt-issue-labels: 'priority:critical,status:blocked'
+          exempt-pr-labels: 'priority:critical,status:blocked'
